@@ -1,0 +1,133 @@
+.list-command-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.list-commands-component{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80vh; /* Define um limite de altura para que a rolagem ocorra */
+    width: 65%; /* Define um limite de largura para que a rolagem ocorra */
+    gap: 15px;
+}
+
+.list-commands-component-ceil{
+    padding: 30px;
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.list-commands-component-ceil-closed{
+    background-color: #B2FFD6;
+    width: 110px;
+    height: 110px;
+}
+
+.list-commands-component-ceil-open{
+    background-color: #FE5F55;
+    width: 110px;
+    height: 110px;
+}
+
+a {
+    color: inherit;         /* Usa a cor do texto do elemento pai */
+    text-decoration: none;  /* Remove o sublinhado */
+    width: max-content;
+    height: max-content;
+}
+
+
+.list-commands-component-forms{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    background-color: #d9d9d9;
+    padding: 40px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 80px;
+}
+
+.list-commands-component-filter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+.list-commands-component-new-command{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+.titulo-nome-field-filter, .date-field-filter, .status-field-filter, .type-field-filter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+label {
+    width: 25%;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="number"],
+select {
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+button[type='submit']{
+    border-radius: 4px;
+    border-color: black;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+button[type='submit']:hover{
+    transition: .7s;
+    color: white;
+    background-color: #023436;
+}
+
+.comanda-vazia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-commands-component-ceil strong {
+    display: block; /* Garante que o elemento ocupe a largura disponível */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona reticências ao final do texto cortado */
+}

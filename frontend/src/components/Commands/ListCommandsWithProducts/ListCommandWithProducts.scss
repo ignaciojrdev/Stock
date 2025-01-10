@@ -1,0 +1,85 @@
+.centering-titles{
+    text-align: center;
+}
+
+.list-command-products{
+    display: flex;
+    width: 90vw;
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-y: scroll;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+th{
+    background-color: #f7bfbf;
+}
+
+td, th {
+    border: 2px solid #d9d9d9;
+    width: 100px;
+    padding: 10px;
+    height: 10px;
+}
+
+tr:nth-child(even) {
+}
+
+tr:nth-child(odd) {
+}
+
+//tr:hover {background-color: #ddd;}
+tr:hover {background-color: #d9d9d9}
+
+button{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.container-list-command-products{
+    display: flex;
+    flex-direction: row;
+}
+
+.list-command-products-actions-button{
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.list-command-products-actions{
+    margin: 10px;
+    width: 10%;
+}
+
+.buttonHover:hover{
+    transition: .7s;
+    color: white;
+    background-color: #023436;
+}
+
+.centering-button{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonHoverDelete:hover{
+    transition: .7s;
+    color: black;
+    background-color: red;
+}
+
+.comanda-vazia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

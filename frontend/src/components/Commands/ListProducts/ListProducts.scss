@@ -1,0 +1,29 @@
+.list-products{
+    display: flex;
+    width: 90vw;
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+.centering-titles{
+    text-align: center;
+}
+
+.container-list-products{
+    display: flex;
+    flex-direction: row;
+}
+
+.comanda-vazia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: none;
+}
+
+input[type="number"],
+select {
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+}
