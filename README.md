@@ -1,1 +1,1 @@
-Sistema controlador de estoque com o uso de comandas para vendas - clean arch
+Sistema controlador de estoque com o uso de comandas para vendas. Baseado na arquiterura limpa.
